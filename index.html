@@ -8,5 +8,28 @@
 </head>
 <body>
     <p>Some text</p>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCPrV8dc-4Yz5Da-mpLjmk2ysxifie2P3I",
+          authDomain: "pong-data.firebaseapp.com",
+          projectId: "pong-data",
+          storageBucket: "pong-data.appspot.com",
+          messagingSenderId: "726025886667",
+          appId: "1:726025886667:web:1ecc455369ca0d0f60f44e",
+          measurementId: "G-RP63VWWZML"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 </html>
